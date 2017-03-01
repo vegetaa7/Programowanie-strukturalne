@@ -3,33 +3,26 @@
 
 using namespace std;
 
-
 void wpisz_dane();
-
 void wpisz_dane2();
 void przelew_kowalski();
 
 fstream kowalski;
 fstream nowak;
 
-int main()
-{
-
-wpisz_dane();
-wpisz_dane2();
-przelew_kowalski;
-
-
-    return 0;
+int main() {
+  wpisz_dane();
+  wpisz_dane2();
+  przelew_kowalski;
+  return 0;
 }
 
-void wpisz_dane()
-
-{
+void wpisz_dane() {
     string imie,nazwisko;
     int saldo_konta;
 
-    cin>>imie;cin>>nazwisko;cin>>saldo_konta;
+    cin>>imie;
+	cin>>nazwisko;cin>>saldo_konta;
 
     kowalski.open("Kowalski.txt", ios::out );
 
